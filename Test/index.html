@@ -9,17 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce60e6a457.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav class="top-menu">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
                 <ul class="menu-main">
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">TEAM</a></li>
                     <li><a href="">BOOKING</a></li>
-                    <li><a class="logo" href=""><img src="images/logo.svg" alt="FANCY SAILOR"></a></li>
+                    <a class="logo" href=""><li><img src="images/logo.svg" alt="FANCY SAILOR"></li></a>
                     <li><a href="">MENU</a></li>
                     <li><a href="">GALERIE</a></li>
                     <li><a href="">EVENTS</a></li>
@@ -120,10 +125,12 @@
         <section class="contact-us">
             <h2>CONTACT</h2>
             <div class="rectangle"></div>
-            <b>
+            <p>
+                <b>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
                             velit maximus, molestie est a, tempor magna.
             </b>
+            </p>
             <form class="contact" action="/contact-us">
                 <div class="form-control">
                     <input id="contact-name" type="text">
