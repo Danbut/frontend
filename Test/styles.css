@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding-top: 1%;
+    padding-top: 1vh;
 }
 
 ul {
@@ -60,7 +60,7 @@ h1, h2 {
 
 h1 {
     font-size: 8vw;
-    margin: 1% auto;
+    margin: 1vh auto;
 }
 
 span {
@@ -76,7 +76,7 @@ span {
     flex-direction: column;
     align-items: center;
     height: 65%;
-    padding: 10%;
+    padding: 10vh;
 }
 
 .header-button {
@@ -84,16 +84,16 @@ span {
     justify-content: center;
     width: 60%;
     height: 8vh;
-    margin: 2% auto;
-    padding-top: 1%;
+    margin: 2vh auto;
+    padding-top: 1vh;
 }
 
 .header-button__book-table {
     background: #E8C300;
-    border-radius: 5px;
+    border-radius: 0.32em;
     color: #ffffff;
-    width: 35%;
-    height: 100%;
+    width: 16vw;
+    height: 5vw;
     border: 0;
     font-weight: bold;
     font-size: 1vw;
@@ -101,18 +101,19 @@ span {
 }
 
 button.header-button__book-table:active {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border: 0.0625em solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.32em;
     background: transparent;
 }
 
 .header-button__explore {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border: 0.0625em solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.32em;
     background: transparent;
     color: #ffffff;
-    width: 35%;
-    margin-left: 7%;
+    width: 16vw;
+    height: 5vw;
+    margin-left: 6vw;
     font-weight: bold;
     font-size: 1vw;
     line-height: 1.4vh;
@@ -123,11 +124,11 @@ button.header-button__explore:active {
 }
 
 .rectangle {
-    margin: 2%;
+    margin: 2vh;
     background: #E8C300;
-    width: 8%;
+    width: 8vw;
     height: 1vh;
-    border-radius: 50px;
+    border-radius: 3.4em;
 }
 
 .about-us-book-a-table {
@@ -149,18 +150,18 @@ button.header-button__explore:active {
     text-align: center;
     font-size: 1.2vw;
     line-height: 1.5;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .about-us__img {
-    margin-right: 5%;
+    margin-right: 5vw;
 }
 
 h2 {
     font-size: 3vw;
     line-height: 2.1vh;
-    margin: 1% auto;
+    margin: 1vh auto;
 }
 
 .book-a-table {
@@ -170,44 +171,42 @@ h2 {
     justify-content: center;
 }
 
-.book-a-table__form {
+.book-a-table__text {
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 5%;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-    padding: 3%
+.book-a-table__form {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    row-gap: 1em;
 }
 
 .form-control {
     position: relative;
-    width: 45%;
-    height: 100%;
-    margin-right: 5%;
-    margin-bottom: 1%;
 }
 
 .form-control input {
-    display: block;
     width: 100%;
-    border-radius: 5px;
+    height: 5vh;
+    display: block;
+    border-radius: 0.32em;
     background: #E5E5E5;
     border: none;
-    padding: 15px;
+    padding: 0.9375em;
     cursor: pointer;
 }
 
 .form-control input:focus {
     background: #ffffff;
-    border: 1px solid rgb(255, 187, 0);
-    border-radius: 5px;
+    border: 0.0625em solid rgb(255, 187, 0);
+    border-radius: 0.32em;
 }
 
 .form-control input:focus~label {
@@ -222,14 +221,14 @@ form {
     font-weight: normal;
     font-size: 1.05vw;
     line-height: 1.4vh;
-    text-indent: 20px;
+    text-indent: 1.25em;
     color: rgba(51, 51, 51, 0.5);
-    border-radius: 5px;
+    border-radius: 0.32em;
     cursor: pointer;
     display: block;
     position: absolute;
-    left: 15px;
-    top: 14px;
+    left: 0.9375;
+    top: 1vh;
 }
 
 .form-control i {
@@ -237,33 +236,31 @@ form {
     font-size: 1.25vw;
     line-height: 1.4vh;
     color: rgba(51, 51, 51, 0.5);
-    border-radius: 5px;
+    border-radius: 0.32;
     display: block;
     position: absolute;
-    right: 0px;
-    top: 12px;
+    right: 0em;
+    top: 0.5em;
 }
 
 .submit {
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin-right: 2.5%;
+    grid-column: 1/3;
 }
 
 .submit input {
     background: #E8C300;
-    border-radius: 5px;
+    border-radius: 0.32em;
     display: block;
-    width: 100%;
+    width: 28.5vw;
     border: none;
-    padding: 20px;
+    padding: 2em;
     cursor: pointer;
 }
 
 .submit input:focus {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border: 0.32em solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.32em;
     background: transparent;
 }
 
@@ -276,13 +273,13 @@ form {
     font-size: 1vw;
     line-height: 1.4vh;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 0.32em;
     cursor: pointer;
     display: block;
     position: absolute;
-    left: 40%;
-    right: 40%;
-    top: 14px;
+    left: 30%;
+    right: 27%;
+    top: 1.4em;
 }
 
 .info {
@@ -290,11 +287,11 @@ form {
     font-size: 1vw;
     line-height: 1.1vh;
     color: rgba(51, 51, 51, 0.5);
-    border-radius: 5px;
+    border-radius: 0.32em;
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 3%
+    padding: 10vh;
 }
 
 .specialties {
@@ -308,7 +305,7 @@ form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 10vh;
 }
 
 .chocolate-pancakes {
@@ -316,7 +313,7 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 5vw;
 }
 
 .chocolate-pancakes__text {
@@ -330,37 +327,42 @@ form {
 }
 
 .contact-us {
-    margin: 5%;
+    margin: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
+.contact-wrapper {
+    flex-direction: row;
+}
+
 .contact {
     width: 100%;
-    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+    row-gap: 1em;
 }
 
 .contact>.form-control {
-    width: 25.4%;
+    grid-row: 1;
 }
 
 .message {
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 1%;
-    margin-right: 20%;
+    margin-bottom: 1vh;
+    grid-column: 1 / 4;
 }
 
 .message>input {
     display: block;
-    width: 100%;
-    border-radius: 5px;
+    width: 85.5vw;
+    border-radius: 0.32em;
     background: #E5E5E5;
     border: none;
-    padding: 5%;
+    padding: 5vh;
     cursor: pointer;
 }
 
@@ -368,9 +370,9 @@ form {
     font-weight: normal;
     font-size: 1.1vw;
     line-height: 1.4vh;
-    text-indent: 20px;
+    text-indent: 1.25em;
     color: rgba(51, 51, 51, 0.5);
-    border-radius: 5px;
+    border-radius: 0.32em;
     cursor: pointer;
     display: block;
     position: absolute;
@@ -380,8 +382,8 @@ form {
 
 .message input:focus {
     background: #ffffff;
-    border: 1px solid rgb(255, 187, 0);
-    border-radius: 5px;
+    border: 0.0625em solid rgb(255, 187, 0);
+    border-radius: 0.32em;
 }
 
 .message input:focus~label {
@@ -389,22 +391,16 @@ form {
 }
 
 .contact__submit {
-    margin-left: 12%;
-    padding: 3%;
-    width: 60%;
+    grid-column: 1/4;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.contact__submit>.submit {
-    width: 90%;
-}
-
 .contact__submit input:focus {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border: 0.0625em solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.32em;
     background: transparent;
 }
 
@@ -425,7 +421,7 @@ footer {
     font-size: 1vw;
     line-height: 1.1vh;
     color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    border-radius: 0.32em;
 }
 
 @media screen and (max-width: 860px) {
@@ -446,39 +442,36 @@ footer {
         height: 0;
         display: block;
         position: relative;
-        top: 50px;
-        left: 50px;
+        top: 3.125em;
+        left: 3.125em;
         z-index: 1;
-        -webkit-user-select: none;
         user-select: none;
     }
 
     .top-menu input {
         display: block;
-        width: 40px;
-        height: 32px;
+        width: 2.5em;
+        height: 2em;
         position: absolute;
-        top: -7px;
-        left: -5px;
+        top: -0.4375em;
+        left: -0.32em;
 
         cursor: pointer;
 
         opacity: 0;
         z-index: 2;
-
-        -webkit-touch-callout: none;
     }
 
     .top-menu span {
         display: block;
         width: 2.9vw;
         height: 0.33vh;
-        margin-bottom: 5px;
+        margin-bottom: 0.32em;
         position: relative;
         background: #cdcdcd;
-        border-radius: 3px;
+        border-radius: 0.1875‬em;
         z-index: 1;
-        transform-origin: 4px 0px;
+        transform-origin: 0.25em 0em;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
         background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
         opacity 0.55s ease;
@@ -494,7 +487,7 @@ footer {
 
     .top-menu input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-0.125‬em, -0.0625em‬);
         background: #232323;
     }
 
@@ -504,7 +497,7 @@ footer {
     }
 
     .top-menu input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, -0,0625‬em);
     }
 
     .menu-main {
@@ -512,14 +505,13 @@ footer {
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        width: 300px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
+        width: 18.75em;
+        margin: -6.25em 0 0 -3.125em;
+        padding: 3.125em;
+        padding-top: 7.8125em;
         
         background: #ffffff;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
         
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
@@ -536,7 +528,7 @@ footer {
     }
 
     .menu-main li {
-        padding: 10px 0;
+        padding: 0.625‬em 0;
         font-size: 1.9vw;
     }
 

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce60e6a457.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">TEAM</a></li>
                     <li><a href="">BOOKING</a></li>
-                    <a class="logo" href=""><li><img src="images/logo.svg" alt="FANCY SAILOR"></li></a>
+                    <li><a class="logo" href=""><img src="images/logo.svg" alt="FANCY SAILOR"></a></li>
                     <li><a href="">MENU</a></li>
                     <li><a href="">GALERIE</a></li>
                     <li><a href="">EVENTS</a></li>
@@ -63,10 +63,10 @@
             </section>
             <section class="book-a-table">
                 <a class="book-a-table__img" href=""><img src="images/about-img2.svg" alt=""></a>
-                <div class="book-a-table__form">
+                <div class="book-a-table__text">
                     <h2>BOOK A TABLE</h2>
                     <div class="rectangle"></div>
-                    <form action="/book-a-table">
+                    <form class="book-a-table__form" action="/book-a-table">
                         <div class="form-control">
                             <input id="book-a-table-name" type="text">
                             <label for="book-a-table-name">Name</label>
@@ -131,30 +131,32 @@
                             velit maximus, molestie est a, tempor magna.
             </b>
             </p>
-            <form class="contact" action="/contact-us">
-                <div class="form-control">
-                    <input id="contact-name" type="text">
-                    <label for="contact-name">Name</label>
-                </div>
-                <div class="form-control">
-                    <input id="contact-email" type="email">
-                    <label for="contact-email">Email</label>
-                </div>
-                <div class="form-control">
-                    <input id="contact-phone" type="text">
-                    <label for="contact-phone">Phone</label>
-                </div>
-                <div class="message">
-                    <input id="contact-message" type="text">
-                    <label for="contact-message">Message</label>
-                </div>
-                <div class="contact__submit">
-                    <div class="submit">
-                        <input id="contact-submit" type="submit" value="">
-                        <label for="contact-submit">SEND MESSAGE</label>
+            <div class="contact-wrapper">
+                <form class="contact" action="/contact-us">
+                    <div class="form-control">
+                        <input id="contact-name" type="text">
+                        <label for="contact-name">Name</label>
                     </div>
-                </div>
-            </form>
+                    <div class="form-control">
+                        <input id="contact-email" type="email">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="form-control">
+                        <input id="contact-phone" type="text">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                    <div class="message">
+                        <input id="contact-message" type="text">
+                        <label for="contact-message">Message</label>
+                    </div>
+                    <div class="contact__submit">
+                        <div class="submit">
+                            <input id="contact-submit" type="submit" value="">
+                            <label for="contact-submit">SEND MESSAGE</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
