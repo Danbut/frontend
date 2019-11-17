@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3a405b;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Next_Icon" data-name="Next Icon" class="cls-1" d="M217.7,2461.86l-3.835,3.82a1.083,1.083,0,0,1-1.534-1.53l3.835-3.82a1.091,1.091,0,0,1,1.534,0A1.079,1.079,0,0,1,217.7,2461.86Zm0,6.31-3.835-3.82a1.083,1.083,0,1,0-1.534,1.53l3.835,3.82a1.091,1.091,0,0,0,1.534,0A1.079,1.079,0,0,0,217.7,2468.17Z" transform="translate(-212.031 -2460.03)"/>
+</svg>

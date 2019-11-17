@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce60e6a457.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="top-menu">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menu-main">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">TEAM</a></li>
+                    <li><a href="">BOOKING</a></li>
+                    <li><a class="logo" href=""><img src="images/logo.svg" alt="FANCY SAILOR"></a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALERIE</a></li>
+                    <li><a href="">EVENTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+                <div class="header-center">
+                    <span>RESTAURANT</span>
+                    <h1>FANCY SAILOR</h1>
+                    <div class="rectangle"></div>
+                    <div class="header-button">
+                        <button class="header-button__book-table">BOOK TABLE</button>
+                        <button class="header-button__explore">EXPLORE</button>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="about-us-book-a-table">
+            <section class="about-us">
+                <div class="about-us__text">
+                        <h2>ABOUT US</h2>
+                        <div class="rectangle"></div>
+                        <p>
+                            <b>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                                        velit maximus, molestie est a, tempor magna.
+                            </b> <br>
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                            ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                            sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                            facilisis semper laoreet.
+                        </p>
+                </div>
+                <a class="about-us__img" href=""><img src="images/about-img1.svg" alt=""></a>
+            </section>
+            <section class="book-a-table">
+                <a class="book-a-table__img" href=""><img src="images/about-img2.svg" alt=""></a>
+                <div class="book-a-table__text">
+                    <h2>BOOK A TABLE</h2>
+                    <div class="rectangle"></div>
+                    <form class="book-a-table__form" action="/book-a-table">
+                        <div class="form-control">
+                            <input id="book-a-table-name" type="text">
+                            <label for="book-a-table-name">Name</label>
+                        </div>
+                        <div class="form-control">
+                            <input id="book-a-table-email" type="email">
+                            <label for="book-a-table-email">Email</label>
+                        </div>
+                        <div class="form-control">
+                            <input id="book-a-table-phone" type="text">
+                            <label for="book-a-table-phone">Phone</label>
+                        </div>
+                        <div class="form-control icon">
+                            <input id="book-a-table-people" type="text">
+                            <label for="book-a-table-people">People</label>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="form-control">
+                            <input id="book-a-table-date" type="text">
+                            <label for="book-a-table-date">Date (mm/dd)</label>
+                        </div>
+                        <div class="form-control icon">
+                                <input id="book-a-table-time" type="text">
+                                <label for="book-a-table-time">Time</label>
+                                <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="submit">
+                            <input id="book-a-table-submit" type="submit" value="">
+                            <label for="book-a-table-submit">BOOK NOW</label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="info">Mon - Fri: &ensp; <b>8PM - 10PM</b>, &ensp;   Sat - Sun: &ensp; <b>8PM - 3AM</b>,  &ensp; Phone: &ensp; <b>+40 729 131 637/+40 726 458 782</b></div>
+        </div>
+        <div class="specialties">
+            <span>SPECIALTIES</span>
+            <section class="chocolate-pancakes">
+                <a href=""><img src="images/specialties-img.svg" alt=""></a>
+                <div class="chocolate-pancakes__text">
+                    <h2>CHOCOLATE PANCAKES</h2>
+                    <div class="rectangle"></div>
+                    <p>
+                        <b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                                    velit maximus, molestie est a, tempor magna.
+                        </b><br>
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                        ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                        facilisis semper laoreet.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section class="contact-us">
+            <h2>CONTACT</h2>
+            <div class="rectangle"></div>
+            <p>
+                <b>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                            velit maximus, molestie est a, tempor magna.
+            </b>
+            </p>
+            <div class="contact-wrapper">
+                <form class="contact" action="/contact-us">
+                    <div class="form-control">
+                        <input id="contact-name" type="text">
+                        <label for="contact-name">Name</label>
+                    </div>
+                    <div class="form-control">
+                        <input id="contact-email" type="email">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="form-control">
+                        <input id="contact-phone" type="text">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                    <div class="message">
+                        <input id="contact-message" type="text">
+                        <label for="contact-message">Message</label>
+                    </div>
+                    <div class="contact__submit">
+                        <div class="submit">
+                            <input id="contact-submit" type="submit" value="">
+                            <label for="contact-submit">SEND MESSAGE</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright"> © Copyright <b>Fancy Sailor</b> 2014 </div>
+    </footer>
+</body>
+</html>
