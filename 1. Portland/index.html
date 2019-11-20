@@ -5,44 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portland</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce60e6a457.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <div class="top-header">
-            <div class="wrapper">
-                <div class="menu">
-
+        <div class="wrapper">
+            <div class="top-header">
+                <div>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class='logo'>
+                        <img src="assets/images/logo/header-logo.svg" alt="Portland">
+                    </div>
                 </div>
-                <div class="divider">
-
-                </div>
-                <div class='logo'>
-
-                </div>
-                <nav class="nav">
-
+                <nav class="top-nav">
+                    <ul class="horizontal-menu">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/devices">Devices</a></li>
+                        <li><a href="/delivery&payment">Delivery & Payment</a></li>
+                        <li><a href="/guarantee">Guarantee</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                    </ul>
                 </nav>
-                <div class="shopping-cart">
-
-                </div>
-                <div class="sign-in">
-
+                <div>
+                    <a class="shopping-cart" href="/shopping-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <small>CART</small>
+                        <div class="shopping-cart-quantity"><small>0</small></div>
+                    </a>
+                    <button class="sign-in"><small>SIGN IN</small></button>
                 </div>
             </div>
         </div>
-        <div class="divider">
-
-        </div>
-        <div class="bottom-header">
-            <div class="wrapper">
-                <nav class="nav">
-
+        <div class="horizontal-divider"></div>
+        <div class="wrapper">
+            <div class="bottom-header">
+                <nav class="bottom-nav">
+                    <ul class="horizontal-menu">
+                        <li><a href="/top-sales">TOP SALES</a></li>
+                        <li><a href="/brand-focus">BRAND FOCUS</a></li>
+                        <li><a href="/hi-tech">HI-TECH</a></li>
+                        <li><a href="/best-sellers">BEST SELLERS</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                    </ul>
                 </nav>
-                <nav class="nav">
-
-                </nav>
-                <div class="search">
-
+                <div>
+                    <nav class="bottom-nav">
+                        <ul class="horizontal-menu">
+                            <li><a href="/support">SUPPORT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        I'm looking for ...
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,73 +72,430 @@
     <main class="main">
         <section class="slider">
             <div class="wrapper">
-                <h2></h2>
-                <p></p>
-                <button class="next"></button>
-                <button class="buy-now"></button>
+                <h2>iPhone 6 32Gb Black</h2>
+                <p>
+                    At first, for some time, I was not able to answer him one world;
+                    but as he had taken me in his arms i held fast by him, or I should
+                    have fallen to the ground.
+                </p>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+                <button class="buy-now">BUY NOW</button>
                 <div class="dots">
-
+                    <button class="dot dot__active"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
                 </div>
             </div>
         </section>
-        <div class="catalog">
-            <div class="wrapper">
-                <div class="top-filter">
-
+        <div class="wrapper">
+            <aside class="top-filter">
+                <div class="sort">
+                    <span>SORT BY:</span>
+                    <div class="form-control form-control_size-small">
+                        <input id="best-match" type="text">
+                        <label for="best-match">BEST MATCH</label>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
                 </div>
-                <aside class="filter">
-                    <div class="categories"></div>
-                    <div class="available"></div>
-                    <div class="condition"></div>
-                    <div class="delivery-options"></div>
-                </aside>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="pagination">
-
+                <div class="vertical-divider"></div>
+                <div class="input">
+                    <span>KEYWORDS</span>
+                    <input type="text" placeholder="TABLET">
                 </div>
-                <section class="best-sellers">
-                    <h4>BEST SELLERS</h3>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </section>
-                <section class="customers">
-                    <h3></h3>
-                    <h5></h5>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
+                <div class="input">
+                    <span>PRICE</span>
+                    <input type="number" placeholder="10">
+                    <span>-</span>
+                    <input type="number" placeholder="1000">
+                </div>
+                <div class="checkbox checkbox__checked">
+                    <i class="fas fa-check-circle"></i>
+                    Free Shipping
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="sort">
+                    <span>SHIP TO:</span>
+                    <div class="form-control form-control_size-small">
+                        <input id="country" type="text">
+                        <label for="country">USA</label>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </aside>   
+            <aside class="right-filter">
+                <div class="filter categories">
+                    <div class="form-control form-control_size-big">
+                        <input id="top-sales" type="text">
+                        <label for="top-sales">Top Sales</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="form-control form-control_size-big">
+                        <input id="brand-focus" type="text">
+                        <label for="brand-focus">Brand Focus</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="form-control form-control_size-big">
+                        <input id="hi-tech" type="text">
+                        <label for="hi-tech">Hi-Tech</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="form-control form-control_size-big">
+                        <input id="home" type="text">
+                        <label for="home">Home</label>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="form-control form-control_size-big">
+                        <input id="sale" type="text">
+                            <label for="sale">Sale</label>
+                            <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="filter available-and-brands">
+                    <div class="filter-section">
+                        <span>AVAILABLE</span>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="checkbox filter-checkbox">
+                        <div class="checkbox__checked">
+                            <i class="far fa-dot-circle"></i>
+                            In Storage
+                        </div>
+                        <span class="quantity">45</span>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-circle"></i>
+                            In Online-Shop
+                        </div>
+                        <span class="quantity">12</span>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="filter-section">
+                        <span>BRANDS</span>
+                        <a>ALL</a>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="checkbox filter-checkbox">
+                        <div class="checkbox__checked">
+                            <i class="fas fa-check-square"></i>
+                            Apple
+                        </div>
+                        <span class="quantity">32</span>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            JBL
+                        </div>
+                        <span class="quantity">14</span>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            Base
+                        </div>
+                        <span class="quantity">3</span>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            Nest  
+                        </div>
+                        <span class="quantity">5</span>
+                    </div>
+                </div>
+                <div class="filter condition">
+                    <div class="filter-section">
+                        <span>CONDITION</span>
+                        <a>SEE ALL</a>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="checkbox filter-checkbox">
+                        <div class="checkbox__checked">
+                            <i class="fas fa-check-square"></i>
+                            New
+                        </div>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            Manufacturer Refurbished
+                        </div>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            Seller Refurbished
+                        </div>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div class="checkbox__checked">
+                            <i class="fas fa-check-square"></i>
+                            Used
+                        </div>
+                    </div>
+                    <div class="checkbox filter-checkbox">
+                        <div>
+                            <i class="far fa-square"></i>
+                            For Parts or not Working
+                        </div>
+                    </div>
+                </div>
+                <div class="filter delivery-options">
+                    <div class="filter-section">
+                        <span>DELIVERY OPTIONS</span>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="checkbox-pair">
+                        <div class="checkbox filter-checkbox">
+                            <div class="checkbox__checked">
+                                <i class="far fa-dot-circle"></i>
+                                FREE
+                            </div>
+                        </div>
+                        <div class="vertical-divider"></div>
+                        <div class="checkbox filter-checkbox">
+                            <div>
+                                <i class="far fa-circle"></i>
+                                $4.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="catalog">
+                <a class="card card-standart">
+                    <img src="assets/images/cards/apple-tv.png" alt="Apple TV">
+                    Apple TV 32GB
+                    <span>BLACK</span>
+                    <span class="price">$49.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/pebble.png" alt="Pebble">
+                    Pebble Time
+                    <span>RED</span>
+                    <span class="price">$29.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/zendure.png" alt="Zendure">
+                    Zendure 4-Port USB
+                    <span>WHITE</span>
+                    <span class="price">$49.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/withings.png" alt="Withings">
+                    Withings Smart Body Analyzer ws-50
+                    <span>BLACK</span>
+                    <span class="price">$39.99</span>
+                </a>
+                <a class="card big-card">
+                    <div class="btn">$39.99</div>
+                    <img src="assets/images/cards/jbl.png" alt="Jbl">
+                    <div class="big-card__info">
+                        <div class="big-card__description">
+                            JBL Charge 2+
+                            <span>BLACK</span>
+                        </div>
+                        <div class="big-card__button">
+                            16 GB
+                            <div class="vertical-divider"></div>
+                            <div class="btn">
+                                BUY NOW
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/ollo.png" alt="Ollo">
+                    Ollo Clip New
+                    <span>SILVER</span>
+                    <span class="price">$19.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/fitbit.png" alt="Fitbit">
+                    Fitbit Charge HR Heart Rate and Activity Tracker
+                    <span>Black</span>
+                    <span class="price">$19.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/apple-watch.png" alt="Apple Watch">
+                    Apple Watch Sport 38mm Silver Aluminum Case
+                    <span>WHITE</span>
+                    <span class="price">$49.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/bose.png" alt="Bose">
+                    Bose SoundLink On-Ear Headphones
+                    <span>WHITE</span>
+                    <span class="price">$119.99</span>
+                </a>
+                <a class="card card-standart">
+                    <img src="assets/images/cards/sonos.png" alt="Sonos">
+                    Sonos Play-1 Wireless HiFi System
+                    <span>Black</span>
+                    <span class="price">$99.99</span>
+                </a>
+                <a class="card card-full-image">
+                    <div>
+                        Nest Learning Thermostat 3rd Generation
+                        <span class="price">$49.99</span>
+                    </div>
+                    <img src="assets/images/cards/nest.png" alt="Nest">
+                </a>
             </div>
+            <div class="pagination">
+                <i class="fas fa-chevron-left"></i>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                </ul>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <section class="best-sellers">
+                <h4>BEST SELLERS</h4>
+                <div class="horizontal-divider"></div>
+                <div class="card-container">
+                    <a class="card card-standart">
+                        <img src="assets/images/cards/beanie.png" alt="Beanie">
+                        Beanie
+                        <span>GREEN</span>
+                        <div>
+                            <span class="old-price">&#163;39.99</span>
+                            <span class="price">&#163;29.99</span>
+                        </div>
+                    </a>
+                    <div class="vertical-divider"></div>
+                    <a class="card card-standart">
+                        <img src="assets/images/cards/t-shirt.png" alt="T-Shirt">
+                        T-Shirt With a Print
+                        <span>DARK BLUE</span>
+                        <div>
+                            <span class="old-price">&#163;29.99</span>
+                            <span class="price">&#163;19.99</span>
+                        </div>
+                    </a>
+                    <div class="vertical-divider"></div>
+                    <a class="card card-standart">
+                        <img src="assets/images/cards/pile-leaned.png" alt="Pile-Leaned">
+                        Pile-Leaned Hooded Jacket
+                        <span>DARK BLUE</span>
+                        <div>
+                            <span class="old-price">&#163;49.99</span>
+                            <span class="price">&#163;39.99</span>
+                        </div>
+                    </a>
+                    <div class="vertical-divider"></div>
+                    <a class="card card-standart">
+                        <img src="assets/images/cards/trainers.png" alt="Trainers">
+                        Trainers
+                        <span>SPACE GREY</span>
+                        <div>
+                            <span class="old-price">&#163;39.99</span>
+                            <span class="price">&#163;29.99</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
         </div>
+        <section class="customers">
+            <h3>What Our Customers Have to Say</h3>
+            <h5>Couple of Words About This Stories Section</h5>
+            <div class="wrapper">
+                <div class="articles">
+                    <article class="article">
+                        <div class="profile">
+                            <img src="assets/images/customers/celia-fields.png" alt="Celia Fields">
+                            <div class="profile-info">
+                                <h4 class="name">Celia Fields</h4>
+                                <span>UX Expert</span>
+                            </div>
+                        </div>
+                        <p>
+                            This I have produced as a scantling
+                            of Jack's great eloquence and the 
+                            force of his reasoning upon such
+                            abstruse metters.
+                        </p>
+                    </article>
+                    <article class="article">
+                        <div class="profile">
+                            <img src="assets/images/customers/alexander-lee.png" alt="Alexander Lee">
+                            <div class="profile-info">
+                                <h4 class="name">Alexander Lee</h4>
+                                <span>Founder</span>
+                            </div> 
+                        </div>
+                        <p>
+                            Looking cautiously round, to ascer- 
+                            tain that they were no: overheard,
+                            the two hags cowered nearer to the 
+                            fire, and chuckled heartily.
+                        </p>
+                    </article>
+                    <article class="article">
+                        <div class="profile">
+                            <img src="assets/images/customers/lenora-sendoval.png" alt="Lenora Sendoval">
+                            <div class="profile-info">
+                                <h4 class="name">Lenora Sandoval</h4>
+                                <span>Product Manages</span>
+                            </div>
+                        </div>
+                        <p>
+                            This sounded a very good reason,
+                            and Alice was quite pleased to know
+                            it. 'I never thought of that before!'
+                            she said.
+                        </p>
+                    </article>
+                </div> 
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <div class="logo">
-
+            <div class="footer-container">
+                <div class="footer-top">
+                    <img src="assets/images/logo/footer-logo.svg" alt="Portland">
+                    <nav class="footer-top-nav">
+                        <ul class="horizontal-menu">
+                            <li><a href="/home">HOME</a></li>
+                            <li><a href="/shop">SHOP</a></li>
+                            <li><a href="/team">TEAM</a></li>
+                            <li><a href="/about-us">ABOUT US</a></li>
+                            <li><a href="/contacts">CONTACTS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <img src="assets/images/icons/social/twitter.svg" alt="Twitter">
+                        <img src="assets/images/icons/social/facebook.svg" alt="Facebook">
+                        <img src="assets/images/icons/social/g+.svg" alt="Google+">
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="footer-bottom">
+                    <p>
+                        She gave my mother such a turn, that I have always been convinced I am indebted to Miss
+                        Betsey for having been on a Friday.
+                    </p>
+                    <nav class="footer-bottom=nav">
+                        <ul class="horizontal-menu">
+                            <li><a href="/privacy-policy">PRIVACY POLICY</a></li>
+                            <li><a href="/terms-and-condition">TERMS AND CONDITIONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="nav">
-
-            </nav>
-            <div class="social">
-
-            </div>
-            <div class="divider"></div>
-            <p></p>
-            <nav class="nav">
-
-            </nav>
         </div>
     </footer>
 </body>
