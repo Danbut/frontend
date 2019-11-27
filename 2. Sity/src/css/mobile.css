@@ -1,0 +1,305 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Actor', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0084BA;
+}
+
+.menu-toogle-logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: 1.3125rem;
+    height: 1.75rem;
+
+    padding-top: 0.328125rem;
+    padding-left: 0.9375rem;
+    margin-right: 2.25rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 1.3125rem;
+    height: 0.21875rem;
+
+    margin-bottom: 0.21875rem;
+
+    border-radius: 1px;
+    background-color: #FFFFFF;
+}
+
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
+
+.nav-main {
+    margin-right: 0.75rem;
+}
+
+.horizontal-menu {
+    display: flex;
+
+    list-style-type: none;
+}
+
+.menu-main {
+    justify-content: space-between;
+}
+
+.menu-main-item {
+    margin-right: 1.75rem;
+}
+
+.menu-main .menu-main-item:last-child {
+    margin-right: 0;
+}
+
+.menu-main-icon {
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+
+    color: #FFFFFF;
+}
+
+.categories {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.4rem;
+    padding-left: 1.35rem;
+}
+
+.category-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    color: #1C2E36;
+}
+
+.arrow {
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    color: #E26D5A;
+}
+
+.categories-link {
+    text-decoration: none;
+}
+
+.categories .categories-item {
+    margin-right: 0.3125rem;
+}
+
+.ctegories .categories-item:last-child {
+    margin-right: 0;
+}
+
+h1 {
+    margin: 0;
+
+    padding-top: 0.5rem;
+    padding-left: 1.3125rem;
+
+    font-size: 1.25rem;
+    line-height: 2.375rem;
+    font-weight: normal;
+
+    color: #1C2E36;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 0.5rem;
+}
+
+.slider-form {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-button {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    border: none;
+    background-color: #E26D5A;
+}
+
+.slider-button-icon {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+
+    color: #FFFFFF;
+}
+
+h2 {
+    margin: 0;
+
+    padding-top: 0.6rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+
+    color: #1C2E36;
+}
+
+.map-filter-form {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    height: 2rem;
+
+    background-color: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.button span {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+
+    color: #666666;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.card {
+    position: relative;
+    max-width: 45%;
+
+    margin-bottom: 1rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-star-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+
+    font-size: 1.3125rem;
+    line-height: 1.5rem;
+
+    color: #FFFFFF;
+}
+
+.museum-name {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    color: #1C2E36;
+}
+
+.price {
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+
+    color: #0084BA;
+}
+
+.search-form {
+    display: none;
+}
+
+.menu-main-tablet {
+    display: none;
+}
+
+.dropdowns-container {
+    display: none;
+}
+
+.l-wrap {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.two-col-grid {
+    display: flex;
+}
+
+.two-col-grid .grid-item {
+    width: 100%;
+}
+
+.map {
+    display: none;
+}
+
+.sort-form {
+    display: none;
+}
+
+.dropdown-wrapper-search-form {
+    display: none;
+}
+
+.menu-main-desktop {
+    display: none;
+}
+
+.nav-bottom {
+    display: none;
+}

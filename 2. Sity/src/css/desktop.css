@@ -1,0 +1,128 @@
+@media screen and (min-width: 1140px) {
+    .hamburger {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0.69231rem;
+    }
+
+    .search-form {
+        margin-right: 0.80769rem;
+    }
+
+    .dropdown-wrapper-search-form {
+        display: block;
+        width: 3.03846rem;
+        height: 0.76923rem;
+    }
+
+    .dropdown-placeholder-search-form {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
+        font-size: 0.61538rem;
+        line-height: 0.76923rem;
+
+        color: #FFFFFF;
+    }
+
+    .dropdown-icon-search-form {
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+
+        font-size: 0.38461rem;
+        line-height: 0.42307rem;
+
+        color: #FFFFFF;
+    }
+
+    .nav-main {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-main-desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-main-desktop-item {
+        margin-right: 1rem;
+
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
+
+        font-size: 0.61538rem;
+        line-height: 0.76923rem;
+
+        color: #FFFFFF;
+    }
+
+    .menu-main-desktop-item a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .menu-main-desktop .menu-main-desktopt:last-child {
+        margin-right: 0;
+    }
+    
+    .menu-main-desktop-icon {
+        font-size: 0.8rem;
+        line-height: 1.4375rem;
+    
+        color: #FFFFFF;
+    }
+
+    .nav-bottom {
+        display: flex;
+        height: 1.38461rem;
+
+        justify-content: center;
+
+        background: #0098D7;
+    }
+
+    .menu-bottom  {
+        width: 66%;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .menu-bottom-item a {
+        text-decoration: none;
+
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
+        font-size: 0.69231rem;
+        line-height: 0.92307rem;
+
+        color: #FFFFFF;
+    }
+
+    .filter {
+        justify-content: flex-start;
+    }
+
+    h2 {
+        margin-right: 1.5rem;
+    }
+
+    .dropdown-wrapper-filter-form {
+        width: 4.92307rem
+    }
+    
+    .dropdown-wrapper-margin-large {
+        margin-right: 2rem;
+    }
+
+    .card {
+        max-width: 30%;
+    }
+
+}
