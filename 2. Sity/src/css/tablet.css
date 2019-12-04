@@ -2,222 +2,164 @@
     html {
         font-size: 26px;
     }
-
     .logo {
         margin-right: 2.69231rem;
     }
-
     .search-form {
         display: flex;
         justify-content: center;
         background-color: #FFFFFF;
     }
-
     .search-form__button {
         height: 1.75rem;
-
         border: 1px solid #C2C2C2;
         border-right: none;
         border-radius: 3px 0 0 3px;
-
         background-color: #FFFFFF;
     }
-
     .search-form__search-icon {
         font-size: 1rem;
         line-height: 1.4375rem;
-
         color: #0098D7;
     }
-
     .search-form__input {
         height: 1.75rem;
-
         border: 1px solid #C2C2C2;
         border-left: none;
         border-radius: 0 3px 3px 0;
-
         font-family: 'Source Sans Pro';
-
         font-size: 1rem;
         line-height: 1.25;
-
         background-color: #FFFFFF;
     }
-
     .search-form__input::placeholder {
         color: #000000;
     }
-
     .menu-main {
         display: none;
     }
-
     .menu-main-tablet {
         display: flex;
         justify-content: space-between;
     }
-    
     .menu-main-tablet-item {
         margin-right: 0.3rem;
-
         font-family: 'Source Sans Pro';
         font-weight: 600;
-
         font-size: 0.61538rem;
         line-height: 0.76923rem;
-
         color: #FFFFFF;
     }
-
     .menu-main-tablet-item a {
         text-decoration: none;
         color: #FFFFFF;
     }
-    
     .menu-main-tablet .menu-main-tablet:last-child {
         margin-right: 0;
     }
-    
     .menu-main-tablet-icon {
         font-size: 0.8rem;
         line-height: 1.4375rem;
-    
         color: #FFFFFF;
     }
-
     .slider-form {
         width: 90%;
     }
-
     .map-filter-form {
         display: none;
     }
-
     .filter {
         display: flex;
         justify-content: space-between;
-
         border-bottom: 1px solid #E2E2E2;
     }
-
     select {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-
         position: absolute;
-
         width: 100%;
         height: 100%;
-
         background: transparent;
         border: none;
     }
-    
     select::-ms-expand {
         display: none;
     }
-
     .dropdowns-container {
         display: flex;
         align-items: center;
         margin-right: 1.25rem;
     }
-
     .dropdown-wrapper {
         position: relative;
     }
-
     .dropdown-wrapper-filter-form {
         height: 2.11538rem;
         width: 6.15384rem;
-
         margin-right: 0.46153rem;
-
         border: 1px solid #C2C2C2;
         border-radius: 3px;
     }
-
     .dropdown-wrapper:last-child {
         margin-right: 0;
     }
-
     .dropdown-placeholder {
         position: absolute;
         top: 0.69230rem;
         left: 4.44%;
-
         font-family: 'Source Sans Pro';
         font-size: 0.53846rem;
         line-height: 0.69231rem;
-
         color: #666666;
     }
-
     .dropdown-icon {
         position: absolute;
         top: 0.84615rem;
         right: 0.26923rem;
-
         font-size: 0.46153rem;
         line-height: 0.53846rem;
-
         color: #666666;
     }
-
     .two-col-grid .grid-item {
         width: 50%;
     }
-
     .map {
         display: block;
     }
-
     .sort-form {
         display: flex;
         justify-content: space-between;
-
         padding-left: 1.25rem;
         padding-top: 0.61538rem;
         margin-right: 1.25rem;
         margin-bottom: 0.61538rem;
     }
-
     .dropdown-wrapper-sort-form {
         width: 1.73077rem;
         height: 0.69231rem;
     }
-
     .dropdown-placeholder-sort-form {
         position: absolute;
         top: 0;
         left: 0;
-
         font-family: 'Source Sans Pro';
         font-size: 0.53846rem;
         line-height: 0.69231rem;
-
         color: #1C2E36;
     }
-
     .dropdown-icon-sort-form {
         position: absolute;
         bottom: 10%;
         right: 0;
-
         font-size: 0.46153rem;
         line-height: 0.53846rem;
-
         color: #1C2E36;
     }
-
     .results {
         font-family: 'Source Sans Pro';
         font-size: 0.53846rem;
         line-height: 0.69231rem;
-
         color: #1C2E36;
     }
-
 }

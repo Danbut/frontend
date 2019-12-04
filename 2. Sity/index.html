@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Actor&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce60e6a457.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="src/js/scripts.js"></script>
 </head>
+
 <body>
     <header role="banner">
         <div class="header">
@@ -25,7 +29,8 @@
                     <img src="src/assets/images/logo.svg" alt="Sity">
                 </div>
                 <form action="" class="search-form">
-                    <button class="search-form__button"><i class="fas fa-search menu-main-icon search-form__search-icon"></i></button>
+                    <button class="search-form__button"><i
+                            class="fas fa-search menu-main-icon search-form__search-icon"></i></button>
                     <input class="search-form__input" type="text" placeholder="Search New York">
                 </form>
                 <div class="dropdown-wrapper dropdown-wrapper-search-form">
@@ -36,14 +41,20 @@
             </div>
             <nav role="navigation" class="nav-main">
                 <ul role="menubar" class="menu-main horizontal-menu">
-                    <li role="menuitem" class="menu-main-item"><a href="/info"><i class="far fa-question-circle menu-main-icon"></i></a></li>
-                    <li role="menuitem" class="menu-main-item"><a href="/search"><i class="fas fa-search menu-main-icon"></i></a></li>
-                    <li role="menuitem" class="menu-main-item"><a href="/user"><i class="fas fa-user-circle menu-main-icon"></i></a></li>
+                    <li role="menuitem" class="menu-main-item"><a href="/info"><i
+                                class="far fa-question-circle menu-main-icon"></i></a></li>
+                    <li role="menuitem" class="menu-main-item"><a href="/search"><i
+                                class="fas fa-search menu-main-icon"></i></a></li>
+                    <li role="menuitem" class="menu-main-item"><a href="/user"><i
+                                class="fas fa-user-circle menu-main-icon"></i></a></li>
                 </ul>
                 <ul class="menu-main-desktop horizontal-menu">
-                    <li role="menuitem" class="menu-main-desktop-item"><a href="/help"><i class="far fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Help</a></li>
-                    <li role="menuitem" class="menu-main-desktop-item"><a href="/favorites"><i class="far fa-star"></i>&nbsp;&nbsp;&nbsp;Favorites</a></li>
-                    <li role="menuitem" class="menu-main-desktop-item"><a href="/cart"><i class="fas fa-shopping-cart">&nbsp;&nbsp;&nbsp;Cart</i></a></li>
+                    <li role="menuitem" class="menu-main-desktop-item"><a href="/help"><i
+                                class="far fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Help</a></li>
+                    <li role="menuitem" class="menu-main-desktop-item"><a href="/favorites"><i
+                                class="far fa-star"></i>&nbsp;&nbsp;&nbsp;Favorites</a></li>
+                    <li role="menuitem" class="menu-main-desktop-item"><a href="/cart"><i
+                                class="fas fa-shopping-cart">&nbsp;&nbsp;&nbsp;Cart</i></a></li>
                 </ul>
                 <ul class="menu-main-tablet horizontal-menu">
                     <li role="menuitem" class="menu-main-tablet-item"><i class="fas fa-user-circle menu-main-tablet-icon"></i></li>
@@ -52,7 +63,7 @@
                     <li role="menuitem" class="menu-main-tablet-item"><a href="/register">Register</a></li>
                 </ul>
             </nav>
-        </div> 
+        </div>
         <nav class="nav-bottom">
             <ul class="menu-bottom horizontal-menu">
                 <li role="menuitem" class="menu-bottom-item"><a href="/tours">TOURS</a></li>
@@ -66,18 +77,33 @@
     <main role="main" class="main">
         <nav class="nav-categories">
             <ul class="categories horizontal-menu">
-                <li class="categories-item"><a class="categories-link" href=""><span class="category-name">Category</span></a></li>
+                <li class="categories-item"><a class="categories-link" href=""><span
+                            class="category-name">Category</span></a></li>
                 <li class="categories-item"><span class="arrow">></span></li>
-                <li class="categories-item"><a class="categories-link" href=""><span class="category-name">Museums</span></a></li>
+                <li class="categories-item"><a class="categories-link" href=""><span
+                            class="category-name">Museums</span></a></li>
             </ul>
         </nav>
         <h1>New York City Museums</h1>
         <section role="slider" class="slider">
-            <img src="src/assets/images/slider.svg" alt="New York City Museum">
-            <form action="" class="slider-form">
-                <button class="slider-button"><i class="fas fa-chevron-left slider-button-icon"></i></button>
-                <button class="slider-button"><i class="fas fa-chevron-right slider-button-icon"></i></button>
-            </form>
+            <div class="slides fade">
+                <img class="slide-image" src="src/assets/images/slider.svg" alt="New York City Museum">
+            </div>
+            <div class="slides fade">
+                <img class="slide-image" src="src/assets/images/metropolitan-museum-art.jpg" alt="Metropolitan Museum Art">
+            </div>
+            <div class="slides fade">
+                <img class="slide-image" src="src/assets/images/National-Museum-American-In.jpg" alt="National Museum American Indian">
+            </div>
+            <div class="slides fade">
+                <img class="slide-image" src="src/assets/images/NY-American_Museum_of_Natural_History_New_York_City.jpg" alt="Natural History Museum">
+            </div>
+            <div class="slider-form">
+                <button class="slider-button slider-button-previous"><i
+                        class="fas fa-chevron-left slider-button-icon"></i></button>
+                <button class="slider-button slider-button-next"><i
+                        class="fas fa-chevron-right slider-button-icon"></i></button>
+            </div>
         </section>
         <aside>
             <form action="" class="filter">
@@ -100,22 +126,22 @@
                     </div>
                 </div>
             </form>
-            <form action="" class="map-filter-form">
-                <button class="button"><span>Map</span></button>
-                <button class="button"><span>Filter &nbsp; ></span></button>
-            </form>
+            <div class="map-filter-form">
+                <button class="button js-button-map"><span>Map</span></button>
+                <button class="button js-button-filter"><span>Filter &nbsp; ></span></button>
+            </div>
         </aside>
         <div class="l-wrap">
             <div class="two-col-grid">
                 <div class="grid-item">
-                   <form action="" class="sort-form">
+                    <form action="" class="sort-form">
                         <div class="dropdown-wrapper dropdown-wrapper-sort-form">
                             <select name="" id=""></select>
                             <label for="" class="dropdown-placeholder-sort-form">Sort</label>
                             <i class="fas fa-chevron-down dropdown-icon-sort-form"></i>
                         </div>
                         <span class="results">38 Results</span>
-                   </form>
+                    </form>
                     <div class="container">
                         <div class="card">
                             <a href="/museum">
@@ -124,9 +150,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -138,9 +162,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -152,9 +174,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -166,9 +186,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -180,9 +198,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -194,9 +210,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -208,9 +222,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -222,9 +234,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -236,9 +246,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -250,9 +258,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -264,9 +270,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -278,9 +282,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -292,9 +294,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -306,9 +306,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -320,9 +318,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -334,9 +330,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -348,9 +342,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -362,9 +354,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -376,9 +366,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -390,9 +378,7 @@
                             <a href="/rate"><i class="far fa-star card-star-icon"></i></a>
                             <a href="/museum">
                                 <p class="museum-name">
-                                    9/11 Memorial & 
-                                    Museum Admission:
-                                    Skip the Ticket Line
+                                    9/11 Memorial & Museum Admission: Skip the Ticket Line
                                 </p>
                             </a>
                             <a href="/price"><span class="price">from $26 per person</span></a>
@@ -402,16 +388,7 @@
                 <div class="grid-item map">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                            <iframe 
-                                width="100%" 
-                                height="100%" 
-                                id="gmap_canvas" 
-                                src="https://maps.google.com/maps?q=%201000%205th%20Ave%2C%20New%20York%2C%20NY%2010028&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                                frameborder="0" 
-                                scrolling="no" 
-                                marginheight="0" 
-                                marginwidth="0"
-                            >
+                            <iframe width="100%" height="600px" id="gmap_canvas" src="https://maps.google.com/maps?q=%201000%205th%20Ave%2C%20New%20York%2C%20NY%2010028&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
                             <a href="https://www.emojilib.com"></a>
                         </div>
@@ -419,21 +396,156 @@
                             .mapouter {
                                 position: relative;
                                 text-align: right;
-                                height: 100%;
+                                height: 600px;
                                 width: 100%;
                             }
-
+                            
                             .gmap_canvas {
                                 overflow: hidden;
-                                background: none!important;
-                                height: 100%;
+                                background: none !important;
+                                height: 600px;
                                 width: 100%;
                             }
-                        </style>          
+                        </style>
                     </div>
-                </div>   
-            </div>    
-        </div>    
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="small-map">
+        <div class="list-filter">
+            <button class="button js-button-list"><span>List</span></button>
+            <button class="button js-button-filter"><span>Filter &nbsp; ></span></button>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=%201000%205th%20Ave%2C%20New%20York%2C%20NY%2010028&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://www.emojilib.com"></a>
+            </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                }
+                
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                }
+            </style>
+        </div>
+    </div>
+    <div class="filter-toggle js-filter-toggle">
+        <div class="title-bar">
+            <button class="close js-close">Filter x</button>
+        </div>
+        <div class="filter-toogle-section">
+            <div class="section-title">
+                <h3>Subcategories</h3>
+                <div class="checkbox-icon-wrapper section-plus-minus">
+                    <input type="checkbox" class="js-plus-minus-section"><i class="fas fa-minus"></i>
+                </div>
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Art Museums
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                History Museums
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Outdoor Museums
+            </div>
+        </div>
+        <div class="filter-toogle-section">
+            <div class="section-title">
+                <h3>Neighborhoods</h3>
+                <div class="checkbox-icon-wrapper section-plus-minus">
+                    <input type="checkbox" class="js-plus-minus-section"><i class="fas fa-minus"></i>
+                </div>
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Flatiron
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Chelsea
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Financial District
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Upper East Side
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Upper West Side
+            </div>
+        </div>
+        <div class="filter-toogle-section">
+            <div class="section-title">
+                <h3>Duration</h3>
+                <div class="checkbox-icon-wrapper section-plus-minus">
+                    <input type="checkbox" class="js-plus-minus-section"><i class="fas fa-minus"></i>
+                </div>
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                Up to 1 Hour
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                1-6 Hours
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                4 Hours to 1 Day
+            </div>
+            <div class="checkbox-wrapper">
+                <div class="checkbox-icon-wrapper checkbox-default">
+                    <input type="checkbox"><i class="fas fa-check-square"></i>
+                </div>
+                More Than 1 Day
+            </div>
+        </div>
+        <div class="two-buttons-container">
+            <button class="reset">Reset</button>
+            <button class="go">Go</button>
+        </div>
+    </div>
+    <div id="bg-layer"></div>
 </body>
+
 </html>
